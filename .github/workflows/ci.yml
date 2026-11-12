@@ -79,7 +79,7 @@ jobs:
             type=sha
       # Every pull request proves the image builds; pushes to main also publish it,
       # ready to be pulled by whichever host the site is deployed to.
-      - uses: docker/build-push-action@v6
+      - uses: docker/build-push-action@v7
         with:
           context: .
           push: ${{ github.event_name == 'push' }}
