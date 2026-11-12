@@ -1,0 +1,17 @@
+{
+  "name": "tradehub",
+  "private": true,
+  "scripts": {
+    "setup": "npm install && npm --prefix server install && npm --prefix app install",
+    "server": "npm --prefix server run dev",
+    "web": "npm --prefix app run web",
+    "mobile": "npm --prefix app run start",
+    "dev": "concurrently -n api,app -c teal,yellow \"npm run server\" \"npm run web\"",
+    "test": "npm --prefix server test && npm --prefix app run typecheck",
+    "icons": "node scripts/make-icons.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7",
+    "sharp": "^0.35.5"
+  }
+}

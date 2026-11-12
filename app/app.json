@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "TradeHub",
+    "slug": "tradehub",
+    "scheme": "tradehub",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tradehub.app"
+    },
+    "android": {
+      "package": "com.tradehub.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F766E",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/favicon.png",
+      "name": "TradeHub",
+      "shortName": "TradeHub",
+      "description": "Swap what you have for what you want. Trade phones, cars, TVs and more, and settle the difference in cash.",
+      "themeColor": "#0F766E"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "TradeHub needs access to your photos so you can add pictures of the items you want to trade."
+        }
+      ]
+    ]
+  }
+}

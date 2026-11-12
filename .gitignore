@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Local database and uploaded photos
+server/data/
+
+# Built website
+app/dist/
